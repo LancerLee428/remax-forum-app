@@ -1,0 +1,129 @@
+.message-card {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 40px;
+  color: #000000;
+}
+
+.messageTopImage {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .message-img-container {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    image {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 81px;
+      height: 81px;
+    }
+    .message-text-hasNumber {
+      width: 30px;
+      height: 30px;
+    }
+    text {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #ffffff;
+      background-color: #ff0000;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      width: 16px;
+      height: 16px;
+      border: 4px #ffffff solid;
+    }
+  }
+}
+
+// .message-talk {
+//   display: flex;
+//   margin-bottom: 30px;
+//   .scale-1px {
+//     position: relative;
+//     border: none;
+//     .talk-content {
+//       flex: auto;
+//       .msg-username {
+//         color: #000000;
+//         font-weight: bold;
+//       }
+//       .msg-newmsg {
+//         font-size: 0.875rem;
+//         margin-bottom: 10px;
+//       }
+//       .msg-newtime {
+//         font-size: 0.75rem;
+//         margin-bottom: 8px;
+//       }
+//     }
+//     .message-userproduct {
+//       display: flex;
+//       flex: auto;
+//       flex: 0 0 160px;
+//       .img-prod {
+//         width: 1120px;
+//         height: 120px;
+//         float: right;
+//       }
+//     }
+//   }
+//   .message-userimg {
+//     flex: 0 0 120px;
+//     .user-img {
+//       width: 90px;
+//       height: 90px;
+//       border-radius: 12px;
+//     }
+//   }
+// }
+
+.message-talk {
+  display: flex;
+  margin-bottom: 30px;
+}
+.message-talk > view:first-child {
+  flex: 0 0 120px;
+}
+.message-talk > view:last-child {
+  flex: auto;
+  display: flex;
+}
+.message-talk > view:first-child > image {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+}
+.talk-content {
+  flex: auto;
+}
+.talk-content > view:first-child {
+  color: #000000;
+  font-weight: bold;
+}
+.talk-content > view:nth-child(2) {
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+.talk-content > view:last-child {
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+}
+.talk-content + view {
+  flex: 0 0 160px;
+}
+.talk-content + view > image {
+  width: 120px;
+  height: 120px;
+  float: right;
+}
