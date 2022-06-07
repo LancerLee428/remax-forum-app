@@ -46,3 +46,73 @@
     }
   }
 }
+
+.myLevel {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 18px;
+  .user-count {
+    font-weight: bold;
+    color: #000000;
+  }
+  .user-des {
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+.myCard {
+  font-size: 0.875rem;
+  margin-bottom: 18px;
+}
+.myCard > view:first-child {
+  font-weight: bold;
+  color: #000000;
+}
+.myPic {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999999;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 24px 0px;
+}
+.myPic .flex-width-3 {
+  flex: 0 0 33.3%;
+}
+.myPic .flex-width-4 {
+  flex: 0 0 25%;
+}
+.myPic-image {
+  width: 88px;
+  height: 88px;
+}
+.special-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  height: 70px;
+  background-color: rgba(122, 197, 205, 0.1);
+  color: #3681d6;
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+}
+.special-bottom image {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+}
+.special-bottom-middle {
+  flex: auto;
+}
+.special-bottom > view:last-child {
+  flex: 0 0 100px;
+  border: 1px solid #3681d6;
+  border-radius: 25px;
+  text-align: center;
+  padding: 4px;
+}

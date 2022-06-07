@@ -27,3 +27,17 @@ export interface IMsgTalk {
   lastTime: string,
   productImage: string
 }
+
+export interface ILevel {
+  id: number,
+  count: number,
+  description: string
+}
+
+export interface IUserProd {
+  title: string,
+  arrayImage: IHomeImg[],
+  specialBottom: {
+    [key: string]: any
+  }
+}
